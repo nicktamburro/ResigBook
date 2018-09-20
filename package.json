@@ -1,0 +1,24 @@
+{
+  "name": "resigbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "resig2.js",
+  "dependencies": {
+    "jasmine": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine" 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicktamburro/ResigBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicktamburro/ResigBook/issues"
+  },
+  "homepage": "https://github.com/nicktamburro/ResigBook#readme"
+}
