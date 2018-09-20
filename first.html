@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                #first {color: green;}
+                #second {color: red;}
+            </style>
+        </head>
+        <body>
+            <ul id="first"></ul>
+
+<script>
+    //add message function that takes an element and a message
+    function addMessage(element, message){
+        //creates a list item
+        var messageElement = document.createElement("li");
+        //textContent is a built in thing
+        //we're adding the message that we passed in to the element
+        messageElement.textContent = message;
+        //and to the element, we append the message
+        element.appendChild(messageElement);
+    }
+
+    var first = document.getElementById("first");
+    addMessage(first, "Page Loading");
+    //we now call the function, and add the message to the element "first"
+
+</script>
+
+<ul id="second"></ul>
+
+<script>
+    //now we made a second element
+    //the "first" element was static, now we add an eventListener, or two
+    //mousemove is built in
+    document.body.addEventListener("mousemove", function(){
+        //we define second
+        //we the listener "hears" a mousemove, it does this
+        var second = document.getElementById("second");
+        //and add the mousemove listener
+        addMessage(second, "Event: mousemove");
+    });
+
+//and add the click listener
+    document.body.addEventListener("click", function(){
+        //when it hears a click, it does this
+        var second = document.getElementById("second");
+        addMessage(second, "Event: click");
+    });
+</script>
+
+
+
+        </body>
+    </html>
