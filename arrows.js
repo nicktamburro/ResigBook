@@ -1,4 +1,6 @@
-var greet = name => console.log("Greetings " + name);
+var greet = (name) => console.log("Greetings " + name);
+//if there's only one parameter, like here, you don't need ()
+//but if there are none, or more than one, you do... so I just do them
 
 //in an arrow, you don't have to write return!
 
