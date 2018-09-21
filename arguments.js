@@ -31,8 +31,36 @@ function sum(a, ...otherNumbers){
   console.log("rest sum: " + sum);
     }
   
+//one more argument thing, it aliases function parameters... let's see
 
+function infiltrate(person){
+    if (person === "gardener"){
+        console.log("person is a gardener!");
+    }
 
+    if(arguments[0] === "gardener"){
+        console.log("argument zero is a gardener!");
+    }
+
+    arguments[0] = "ninja";
+
+    if(person === "ninja"){
+        console.log("person is a ninja now!");
+    }
+    if(arguments[0] === "ninja"){
+        console.log("arg 0 is a ninja now!");
+    }
+
+    person = "gardener";
+    if(person === "gardener"){
+        console.log("person is a gardener again!");
+    }
+    if(arguments[0] === "gardener"){
+        console.log("arg 0 is a gardener again!");
+    }
+}
+
+infiltrate("gardener");
 
 
 //here's another one
