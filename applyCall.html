@@ -1,0 +1,19 @@
+<button id="test">Click here!</button>
+
+<script>
+function Button(){
+    this.clicked = false;
+    this.click = function(){
+        this.clicked = true;
+        if(this.clicked){
+            console.log("the button has been clicked!");
+        }
+    };
+}
+
+var button = new Button();
+var elem = document.getElementById("test");
+elem.addEventListener("click", button.click);
+
+
+</script>
