@@ -18,3 +18,9 @@ function performAction(ninja, action = "skulking"){
 performAction("Fuma"); //will say "Fuma skulking"
 performAction("Hattori"); //will say "Hattori skulking"
 performActon("Yagyu", "sneaking") //will say "Yagya sneaking"
+
+//===================================================================================
+//could even do:
+function performAction(ninja, action = "skulking", message = ninja + " " + action){
+    return message;
+}
