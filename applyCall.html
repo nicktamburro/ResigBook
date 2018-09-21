@@ -1,7 +1,22 @@
 <button id="test">Click here!</button>
 
 <script>
+//NOW we're going to try it with arrrow functions, which don't have their own "this"
 function Button(){
+    this.clicked = false;
+    this.click = () => {
+        this.clicked = true;
+        if(button.clicked === true){
+            console.log("button was clicked!");
+        }
+    };
+}
+
+var button = new Button();
+var elem = document.getElementById("test");
+elem.addEventListener("click", button.click);
+
+/*function Button(){
     this.clicked = false;
     this.click = function(){
         this.clicked = true;
@@ -13,7 +28,8 @@ function Button(){
 
 var button = new Button();
 var elem = document.getElementById("test");
-elem.addEventListener("click", button.click);
+elem.addEventListener("click", button.click);*/
+
 
 
 </script>

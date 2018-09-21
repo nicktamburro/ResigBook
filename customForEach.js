@@ -8,10 +8,12 @@ function forEach(list, callback){
     }
 }
 
+//here's the list
 var weapons = [{type: 'shuriken'},
                {type: 'katana'},
                {type: 'nunchuks'}];
 
+//here we call it with weapons as the list, and our function as the callback
 forEach(weapons, function(index){
     if(this === weapons[index]){
         console.log("got expected value of " + weapons[index].type);
