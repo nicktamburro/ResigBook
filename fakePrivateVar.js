@@ -7,6 +7,9 @@ function Ninja(){
     this.getFeints = function(){
         return feints;
     };
+    //has to be "this" because of the new objects we make
+    //can't just do function getFeints()
+    //because then it wouldn't exist in the new instantations
     this.feint = function(){
         feints++;
     };
