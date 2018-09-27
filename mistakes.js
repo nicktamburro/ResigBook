@@ -1,5 +1,6 @@
 //trying to rewrite this from memory
-let array = [5, 2, 3, 1];
+//I don't have everything yet
+let array = [5, 2, 3, 1, 6, 2];
 let range = [1, 5];
 let mistakeCount = 0;
 
@@ -22,7 +23,7 @@ if(sortedArray[i] < range[0] || sortedArray[i] > range[1]){
 // one is missing
 if(sortedArray[i+1] != undefined && sortedArray[i+1] - sortedArray[i] != 1){
     console.log("one missing");
-    mistakeCount += (sortedArray[i+1] - sortedArray[i]);
+    mistakeCount += (sortedArray[i+1] - sortedArray[i] - 1);
 }
 
 
