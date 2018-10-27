@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+body {
+     /* Set "section" to 0 */
+    counter-reset: section;
+}
+
+h1 {
+     /* Set "subsection" to 0 */
+    counter-reset: subsection;
+}
+
+h1::before {
+    /* Increment "section" by 1 */
+    counter-increment: section;
+    content: "Section " counter(section) ": ";
+}
+
+h2::before {
+    /* Increment "subsection" by 1 */
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+} 
+</style>
+</head>
+<body>
+
+<h1>hey</h1>
+<h2>now</h2>
+<h2>you're</h2>
+<h1>an</h1>
+<h2>all</h2>
+<h2>star</h2>
+
+
+
+</body>
+</html>
+
+
