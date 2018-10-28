@@ -22,6 +22,8 @@ h1::before {
 h2::before {
     /* Increment "subsection" by 1 */
     counter-increment: subsection;
+    /*so yes, right here, it's 2 separate counts, and we put the
+    period in there "." */
     content: counter(section) "." counter(subsection) " ";
 } 
 </style>
