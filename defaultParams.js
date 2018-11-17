@@ -17,6 +17,7 @@ performActon("Yagyu", "sneaking") //will say "Yagya sneaking"
 //here, the action will be skulking, UNLESS we say otherwise
 function performAction(ninja, action = "skulking"){
     return ninja + " " + action;
+    console.log("default param at work here");
 }
 
 performAction("Fuma"); //will say "Fuma skulking"
