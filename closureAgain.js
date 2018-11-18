@@ -6,3 +6,4 @@ function outerFunction(){
 }
 
 outerFunction();
+
