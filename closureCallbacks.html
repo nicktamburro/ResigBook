@@ -13,6 +13,7 @@
                 clearInterval(timer);
 
                 if(tick === 100){
+                    //because even after the scope is gone, the closure remains
                     console.log("tick accessed a closure");
                 }if (elem){
                     console.log("element also did");
